@@ -1,0 +1,237 @@
+# Global 全局配置
+# 站点统计代码，这一行代码会被插入到后页脚
+site_analytics: ''
+hoster: <a href="https://github.io" target="_blank">Github Pages</a>
+# 网站的LOGO图片文件，请注意与后面核心JS的设置保持一致
+site_logo: ''
+# (true/false)站点下雪特效开关，控制是否在载入下雪相关的代码
+snow: false
+# (filename/false) 点击事件使用的动画 js 文件，默认为 candy 即主题自带的 candy.js 文件，您可以设置成 false 表示禁用，或是引入其他您喜欢的动画 js 文件
+click_animate_js: 'candy'
+# (true/false)站点是否启用暗色模式适配。请注意，即使启用了暗色模式，在亮色的环境下主题仍然会渲染为亮色模式；同时用户可以手动选择使用的颜色（右下角菜单栏按钮处）
+enable_dark: true
+# 代码高亮主题，五选一（light | night | night-eighties | night-blue | night-bright），控制代码高亮时候使用的配色。会根据用户的选择自动加载对应的高亮主题文件
+highlight_theme: night-eighties # 代码高亮主题（light | night | night-eighties | night-blue | night-bright）
+cdn: false # 请注意这里是静态资源的 CDN 来源，图片的 CDN 在下方 jsconfig.main.pic.CDN 段配置
+# 版本更新检查
+check_update: false
+
+# 自定义样式
+customStyles:
+  images: # 图片相关设置
+    banner: /images/1.jpg # 站点横幅
+    background: /images/2.jpg # 站点背景
+
+# Index 首页配置
+index:
+  post_type: false
+  read_count: false
+  comment_count: false
+
+# Top Menu 顶部导航栏配置 （具体格式请参照文档）需要menu和label一一对应
+menu:
+  index: /
+  archives: /archives/
+#  friends: /friends/
+#  sites:
+#    submenu: true
+#    author: https://candinya.com
+#    project: https://github.com/Candinya/Kratos-Rebirth
+
+label:
+  index: <i class="fa fa-home"></i>首页
+  archives: <i class="fa fa-file"></i>档案馆
+#  friends: <i class="fa fa-paw"></i>好伙伴
+#  sites:
+#    submenu: <i class="fa fa-link"></i>链接
+#    author: 作者博客
+#    project: 项目链接
+
+# Footer 页脚配置
+group_link:
+contact:
+  weibo:
+  mail:
+  telegram:
+  twitter:
+  facebook:
+  linkedin:
+  fediverse:
+    instance:
+    username:
+  github:
+  rss:
+timenotice: 本站已运行
+icp:
+psr:
+
+# Post Page 文章页配置
+posts:
+  # 控制文章页面(./kratos-rebirth/layout/post.ejs)是否显示CreativeCommon知识共享协议相关的提示内容
+  show_cc: false
+  # 控制文章页面是否显示捐助的二维码按钮，二维码链接可以在站点的 JavaScript 相关的配置 里进行修改
+  donate: false
+  # 控制文章页面是否显示分享链接的按钮
+  share: false
+  comments:
+    # 加载指定的评论系统
+    provider: false
+    enableBGImage: false
+
+# Disqus [Disqus](https://disqus.com) 评论相关
+disqus:
+  shortname:
+
+# DisqusJS [DisqusJS](https://disqusjs.skk.moe/) 评论相关
+disqusjs:
+  shortname:
+  sitename:
+  api:
+  apikey:
+  admin:
+  adminlabel:
+
+# Valine [Valine](https://valine.js.org) 评论相关
+valine:
+  app_id:
+  app_key:
+  visitor: true
+  enableQQ: false
+
+# Twikoo [Twikoo](https://twikoo.js.org) 评论相关
+twikoo:
+  env_id:
+
+# Waline [Waline](https://waline.js.org) 评论相关
+## 不仅限于以下内容，您可以参照 Waline的 [前端配置文档](https://waline.js.org/reference/client.html) 设置您需要的配置项
+## el 和 path 会在页面自动生成，不必加入
+waline:
+  serverURL: #后端服务器地址，必填
+  visitor: true
+
+# Gitalk [Gitalk](https://gitalk.github.io/) 评论相关
+## 不仅限于以下内容，您可以参照 [Gitalk 文档](https://github.com/gitalk/gitalk/blob/master/readme-cn.md#%E8%AE%BE%E7%BD%AE) 设置您需要的配置项
+## id 会在页面自动生成，不必加入
+gitalk:
+  clientID: 'GitHub Application Client ID'
+  clientSecret: 'GitHub Application Client Secret'
+  repo: 'Kratos-Rebirth-Demo'
+  owner: 'Candinya'
+  admin:
+    - 'Candinya'
+  distractionFreeMode: false
+
+# Gitment [Gitment](https://github.com/imsun/gitment/) 评论相关
+## 不仅限于以下内容，您可以参照 [Gitment 文档](https://github.com/imsun/gitment#methods) 设置您需要的配置项
+## id 会在页面自动生成，不必加入
+gitment:
+  owner: 'Candinya'
+  repo: 'Kratos-Rebirth-Demo'
+  oauth:
+    client_id: 'Your client ID'
+    client_secret: 'Your client secret'
+
+# LiveRe [LiveRe](https://livere.com/) 评论相关
+livere:
+  id: city
+  uid:
+
+# APlayer 左下角音乐播放器
+aplayer:
+  enabled: false
+  playlist:
+  meting:
+    server: netease
+    type: playlist
+    id: 3204190542
+  order: random
+
+# Widgets 侧边栏小挂件
+sidebar: left
+widgets:
+  - about
+  - splitter
+  - toc
+  - category
+  - tagcloud
+  - posts
+# 头像的图片地址链接
+avatarUri: /images/3.gif
+mobile_toc:
+  # 是否隐藏移动端目录
+  hide: false
+  # 移动端目录前是否自动补充的标号
+  hide_id: false
+
+# Fancybox 启用图片放大显示工具，点击文章内的图片可以进行全屏放大操作
+fancybox: true
+
+# Search 搜索
+search:
+  # 是否启用站点搜索功能
+  enable: true
+  # 搜索数据库的文件名，一般保持默认search.json即可
+  path: search.json
+  # 搜索的区域，可以是页面，或是文章，或是所有内容。默认情况下是仅搜索文章内容。
+  field: post # page | post | all. Default post
+  # 搜索内容是否包含文章或是页面的详细内容
+  content: true # Include post | page content
+
+# JavaScript 相关配置
+## 由于Javascript被压缩后难以有效编辑与生成，因而为了简化操作，将相关的配置项在生成文件时以独立的json文件写出，调用时使用fetch API获取。
+jsconfig:
+  main:
+    pic:
+      random_amount: 20 # 表示从1~20
+      filename: "images/thumb/thumb_{no}.webp" # 相对于主题根目录，表示文件名的格式, {no} 用以指代随机的编号。
+      # 如果包含 // 表示使用指定域名的绝对路径（例如第三方图床服务等），那么会忽略 CDN 选项
+    # 建站时间
+    createTime: "2022/06/14 17:03:12"
+    # 捐助文字
+    donateBtn: ""
+    # 二维码小窗口上的小标题，如果不显示捐助按钮的话也不用去管
+    scanNotice: ""
+    # 支付宝二维码的文件地址
+    qr_alipay: ""
+    # 微信支付二维码的文件地址
+    qr_wechat: ""
+    # 是否启用站点失焦事件???
+    siteLeaveEvent: false
+    # 离开时候站点标题的追加内容
+    leaveTitle: ""
+    # 返回时候站点标题的追加内容
+    returnTitle: ""
+    copyrightNotice: "该内容采用 CC BY-NC-SA 4.0 许可协议，著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"
+    # 文章过期提示：距离最后更新时间多少天时，打开文章页面会给出提示信息
+    expire_day: 30
+    # 顶部导航栏在页面向下滚动时隐藏
+    topNavScrollToggle: true
+
+# Site verify 站点验证相关配置内容
+site_verify:
+  google:
+  baidu:
+  bing:
+
+# Friends 友链相关内容
+friends:
+  href: "friends"
+  page:
+    title: "好伙伴们"
+    comments: false
+    description: "好伙伴们在哪里~"
+    updated: "2021-01-18"
+  list:
+  # - name: "猫猫①号"
+  #   bio: "喵~"
+  #   avatar: "../images/avatar.webp"
+  #   link: "https://candinya.com"
+  # - name: "猫猫②号"
+  #   bio: "喵喵~"
+  #   avatar: "../images/avatar.webp"
+  #   link: "https://candinya.com"
+  # - name: "猫猫⑨号"
+  #   bio: "咪啪~"
+  #   avatar: "../images/avatar.webp"
+  #   link: "https://candinya.com"
+  verify: true # 验证每个友链的可访问性，炸了会有提示
