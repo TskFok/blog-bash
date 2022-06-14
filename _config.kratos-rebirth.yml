@@ -11,7 +11,7 @@ click_animate_js: 'candy'
 # (true/false)站点是否启用暗色模式适配。请注意，即使启用了暗色模式，在亮色的环境下主题仍然会渲染为亮色模式；同时用户可以手动选择使用的颜色（右下角菜单栏按钮处）
 enable_dark: true
 # 代码高亮主题，五选一（light | night | night-eighties | night-blue | night-bright），控制代码高亮时候使用的配色。会根据用户的选择自动加载对应的高亮主题文件
-highlight_theme: night-eighties # 代码高亮主题（light | night | night-eighties | night-blue | night-bright）
+highlight_theme: light # 代码高亮主题（light | night | night-eighties | night-blue | night-bright）
 cdn: false # 请注意这里是静态资源的 CDN 来源，图片的 CDN 在下方 jsconfig.main.pic.CDN 段配置
 # 版本更新检查
 check_update: false

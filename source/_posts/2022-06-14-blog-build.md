@@ -6,7 +6,9 @@ categories: build
 pic: 'hexo.png'
 ---
 
-### 安装hexo
+### 使用hexo搭建blog
+
+<!-- more -->
 
 {% codeblock hexo安装 https://hexo.io/zh-cn/docs/ hexo安装 %}
 npm install -g hexo-cli
