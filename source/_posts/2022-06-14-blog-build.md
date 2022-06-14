@@ -10,14 +10,14 @@ pic: 'hexo.png'
 
 <!-- more -->
 
-{% codeblock hexo安装 https://hexo.io/zh-cn/docs/ hexo安装 %}
+{% codeblock &nbsp https://hexo.io/zh-cn/docs/ hexo安装 %}
 npm install -g hexo-cli
 echo 'PATH="$PATH:./node_modules/.bin"' >> ~/.profile
 {% endcodeblock %}
 
 ### 创建项目
 
-{% codeblock 创建项目 https://hexo.io/zh-cn/docs/setup 创建项目 %}
+{% codeblock &nbsp https://hexo.io/zh-cn/docs/setup 创建项目 %}
 blog为项目名称
 
 hexo init blog 
@@ -28,7 +28,7 @@ npm install
 
 ### 配置
 
-{% codeblock 配置 https://hexo.io/zh-cn/docs/ 配置 %}
+{% codeblock &nbsp https://hexo.io/zh-cn/docs/ 配置 %}
 修改_config.yml的title,url,root,new_post_name
 
 title: 标题
@@ -39,7 +39,7 @@ new_post_name: 生成新文章的自动名称
 
 ### 生成新文章
 
-{% codeblock 生成新文章 https://hexo.io/zh-cn/docs/commands 生成新文章 %}
+{% codeblock &nbsp https://hexo.io/zh-cn/docs/commands 生成新文章 %}
 生成名称为title的新文章
 hexo new post title
 
@@ -52,7 +52,7 @@ hexo publish post title
 
 ### 一键部署
 
-{% codeblock 一键部署 https://hexo.io/zh-cn/docs/one-command-deployment 一键部署 %}
+{% codeblock &nbsp https://hexo.io/zh-cn/docs/one-command-deployment 一键部署 %}
 安装 hexo-deployer-git
 npm install hexo-deployer-git --save
 
@@ -70,18 +70,17 @@ hexo clean && hexo deploy
 
 ### github的配置
 
-````
-重命名库名称
-````
+#### 重命名库名称
+
 ![](general.png)
-````
-修改pages的分支 选择的分支要和部署配置里的branch相同
-````
+
+#### 修改pages的分支 选择的分支要和部署配置里的branch相同
+
 ![](page.png)
 
 ### 各种主题
 
-````
+{% codeblock &nbsp https://hexo.io/themes/ 主题 %}
 不同主题语法不同,需要调试
-````
-[下载地址](https://hexo.io/themes/)
+{% endcodeblock %}
+
