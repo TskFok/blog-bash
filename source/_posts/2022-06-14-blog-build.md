@@ -2,6 +2,8 @@
 title: 搭建blog
 date: 2022-06-14 14:02:51
 tags: blog
+categories: build
+pic: 'hexo.png'
 ---
 
 ### 安装hexo
@@ -69,11 +71,11 @@ hexo clean && hexo deploy
 ````
 重命名库名称
 ````
-![](/images/general.png)
+![](general.png)
 ````
 修改pages的分支 选择的分支要和部署配置里的branch相同
 ````
-![](/images/page.png)
+![](page.png)
 
 ### 各种主题
 
