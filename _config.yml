@@ -105,4 +105,4 @@ deploy:
   type: 'git'
   repo: 'git@github.com:TskFok/blog.git'
   branch: 'master'
-  message: 'message'
+  message: '发布新日记'
