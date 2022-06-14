@@ -74,3 +74,10 @@ hexo clean && hexo deploy
 修改pages的分支 选择的分支要和部署配置里的branch相同
 ````
 ![](/images/page.png)
+
+### 各种主题
+
+````
+不同主题语法不同,需要调试
+````
+[下载地址](https://hexo.io/themes/)
