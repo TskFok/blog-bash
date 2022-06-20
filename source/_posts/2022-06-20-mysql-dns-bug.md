@@ -6,6 +6,8 @@ categories: mysql
 pic: 'mysql.jpg'
 ---
 
+mysql连接阶段缓慢
+<!-- more -->
 ````
 mysql直接使用域名连接，在dns解析缓慢的情况下，会产生较大的延迟
 ````
