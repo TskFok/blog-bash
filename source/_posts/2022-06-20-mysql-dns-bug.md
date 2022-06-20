@@ -1,5 +1,5 @@
 ---
-title: mysql-dns-bug
+title: 解决mysql连接阶段缓慢
 date: 2022-06-20 14:30:32
 tags: mysql
 categories: 

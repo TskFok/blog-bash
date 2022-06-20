@@ -1,10 +1,12 @@
 ---
-title: php-fpm-log
+title: 查看php-fpm日志
 date: 2022-06-20 14:36:05
-tags: php
-categories: 
-  - log
+tags: 
   - php
+  - php-fpm-log
+categories: 
+  - php
+  - log
 pic: 'php.png'
 ---
 

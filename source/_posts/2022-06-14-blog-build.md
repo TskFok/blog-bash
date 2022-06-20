@@ -1,8 +1,10 @@
 ---
 title: 搭建blog
 date: 2022-06-14 14:02:51
-tags: blog
-categories: build
+tags: hexo
+categories: 
+  - blog
+  - build
 pic: 'hexo.png'
 ---
 
